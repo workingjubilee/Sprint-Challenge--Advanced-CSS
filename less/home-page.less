@@ -1,8 +1,16 @@
 // Home Content
 
+// Main Content Styles: Use the home-page.less file for styling
+
 .home {
 
   .intro {
+
+    img {
+      max-width: 100%;
+      object-fit: scale-down;
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -11,7 +19,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -58,13 +66,17 @@
       }
 
       .btn {
+        .btnmix(@porcelain,@btn-bg-color);
+        @media @phone {
+          width: 100%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
