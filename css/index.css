@@ -166,11 +166,10 @@ p {
 nav {
   background-color: #f4f4f4;
   padding-bottom: 5px;
-}
-nav .headline {
+  position: fixed;
+  top: 0;
   width: 100%;
-  text-align: center;
-  padding: 10px;
+  opacity: 0.9;
 }
 nav .container {
   display: flex;
@@ -178,7 +177,12 @@ nav .container {
   align-items: center;
   flex-flow: row wrap;
 }
-nav a {
+nav .container .headline {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+nav .container a {
   font-size: 1.6rem;
   padding: 5px 15px;
   text-decoration: none;
@@ -193,6 +197,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  margin-top: 95px;
 }
 .home .intro img {
   max-width: 100%;

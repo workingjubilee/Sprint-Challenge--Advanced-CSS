@@ -4,18 +4,25 @@
 nav {
   background-color: #f4f4f4;
   padding-bottom: 5px;
-  .headline {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
+  // adding a navbar here:
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
   .container {
     .flexcenter;
-  }
-  a {
-    font-size: 1.6rem;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: @header-font-color;
+
+    .headline {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+
+    a {
+      font-size: 1.6rem;
+      padding: 5px 15px;
+      text-decoration: none;
+      color: @header-font-color;
+    }
   }
 }
